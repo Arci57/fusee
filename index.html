@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=0.9">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<title>WebFG</title>
+	</head>
+
+	<body style="padding-left: 10px;">
+		<h1>Web Fusée Launcher</h1>
+
+		<form id="mainForm">
+			<input type="radio" name="payload" id="uploaded" value="uploaded" checked>
+			<label for="uploaded">Upload your own payload:</label>
+			<input type="file" id="payloadUpload">
+		</form>
+		<button id="goButton" class="btn btn-primary">Send Payload!</button>
+
+		<h3>Result:</h3>
+		<textarea cols="80" rows="12" id="output"></textarea>
+
+		<script src="js/mainJS.js"></script>
+	</body>
+</html>
