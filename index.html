@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Web Fusée Launcher</title>
 
+		<!-- Adjustment for mobile devices -->
 		<meta name="viewport" content="initial-scale=0.9">
 
+		<!-- CSS -->
+		<link rel='stylesheet' type='text/css' href="css/main.css">
+
+		<!-- JS --> 
 		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 
-		<title>WebFG</title>
+		<!-- Roboto -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 	</head>
-
-	<body style="padding-left: 10px;">
+	<body>
 		<h1>Web Fusée Launcher</h1>
+		<div class="maincontainer">
+			<form id="mainForm">
+				<input type="radio" name="payload" id="uploaded" value="uploaded" checked>
+				<label id ="payloadUploadLabel" for="payloadUpload" onclick="showSendPayload()">Upload your own payload</label>
+				<input type="file" id="payloadUpload">
+			</form>
+			<a id="goButton" class="btn sendpayload" onclick="showConsole()">Send Payload!</a>
 
-		<form id="mainForm">
-			<input type="radio" name="payload" id="uploaded" value="uploaded" checked>
-			<label for="uploaded">Upload your own payload:</label>
-			<input type="file" id="payloadUpload">
-		</form>
-		<button id="goButton" class="btn btn-primary">Send Payload!</button>
-
-		<h3>Result:</h3>
-		<textarea cols="80" rows="12" id="output"></textarea>
+			<div class="resultoutput" id="resultoutput">
+				<label for="output">Result</label>
+				<textarea id="output"></textarea>
+			</div>
+		</div>
 
 		<script src="js/mainJS.js"></script>
 	</body>
