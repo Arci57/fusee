@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto';
+	margin: 0;
+}
+
+h1, h3, input {
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.maincontainer {
+    padding: 32px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+	border-radius: 32px;
+}
+
+.resultoutput {
+    margin-top: 15px;
+    display: none;
+}
+
+#uploaded {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+	resize: vertical;
+	min-height: 300px;
+	padding: 8px;
+	width: 100%;
+  	border: 2px solid #AAAAAA;
+	border-radius: 8px;
+}
+
+#payloadUpload {
+    display: none;
+}
+
+#payloadUploadLabel {
+	display: block;
+	padding: 10px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #4CAF50;
+	color: #ffffff;
+	font-size: 15px;
+	border-radius: 8px;
+	transition: 0.1s;
+}
+
+#payloadUploadLabel:hover {
+	background: #357A38;
+}
+
+.btn {
+	display: block;
+	padding: 10px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #4CAF50;
+	color: #ffffff;
+	font-size: 15px;
+	border-radius: 8px;
+	transition: 0.1s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+	background-color: #357A38;
+}
+
+.sendpayload {
+	background-color: #f44336;
+}
+
+.sendpayload:hover {
+	background-color: #ba000d;
+}
+
+#goButton {
+    display: none;
+}
